@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+@import "tailwindcss";
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+.curved {
+  position: relative;
+  color: #007bff;
+}
+
+.curved::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+  width: 100%;
+  height: 29px;
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 20'><path d='M5 15 C 40 5, 80 25, 115 15' stroke='%23007bff' stroke-width='5' fill='none' stroke-linecap='round'/></svg>")
+    no-repeat center;
+  background-size: contain;
+}
+
+.hero {
+  @apply flex xl:flex-row flex-col gap-6 relative z-0 min-h-screen mx-auto;
+}
+.padding-x {
+  @apply sm:px-16 px-6;
+}
+.padding-y {
+  @apply sm:py-12 py-16;
+}
+.hero_title {
+  @apply xl:text-[66px] sm:text-[54px] text-[40px] font-extrabold text-zinc-800;
+}
+.hero_subtitle {
+  @apply xl:text-[23px] text-zinc-700 font-light mt-5;
+}
+.hero_image-container {
+  @apply xl:flex-[1.5] flex relative xl:justify-end items-end w-full xl:h-screen h-auto;
+}
+.hero_image {
+  @apply relative xl:w-full w-[90%] xl:h-full h-auto z-0;
+}
+.hero_image-overlay {
+  @apply absolute xl:-top-24 xl:-right-1/2 -right-1/4 bg-repeat-round -z-10 w-full xl:h-screen h-[590px] overflow-hidden;
+}
