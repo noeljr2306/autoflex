@@ -1,6 +1,6 @@
 import React from "react";
 import { FaStar, FaQuoteLeft } from "react-icons/fa";
-import { testimonials } from "../constants";
+import { testimonials } from "../Constants";
 
 const Testimonial = () => {
   const stats = [
