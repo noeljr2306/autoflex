@@ -1,5 +1,5 @@
 import React from "react";
-import { popularCars, rentalCars } from "../constants";
+import { popularCars, rentalCars } from "../Constants";
 import { FaGasPump } from "react-icons/fa";
 import { GiGearStickPattern } from "react-icons/gi";
 import { FaUserFriends } from "react-icons/fa";
