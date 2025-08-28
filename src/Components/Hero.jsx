@@ -19,11 +19,11 @@ const Hero = () => {
           process.
         </p>
 
-        <button
-          className="cursor-pointer bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold mt-12 text-lg"
-        >
-          Featured Cars
-        </button>
+        <a href="#gallery">
+          <button className="cursor-pointer bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold mt-12 text-lg">
+            Featured Cars
+          </button>
+        </a>
       </div>
       <div className="hero_image-container">
         <div className="hero_image">
